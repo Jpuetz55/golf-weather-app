@@ -1,0 +1,27 @@
+{
+  "name": "fwg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "next": "^12.2.4",
+    "next-auth": "^4.10.3",
+    "node": "16.13.0",
+    "query-string": "^7.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3"
+  }
+}
