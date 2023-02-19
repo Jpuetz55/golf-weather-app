@@ -7,14 +7,11 @@ function Calendar({ data }) {
     <div className={'calendarContainer'}>
       <div className = {'calendar'}>     
         
-
-        {data}
-          
-                   
-      </div>
-        
-    </div>
-  )
-  
+      <>
+      {JSON.stringify(data)}
+      </>                              
+      </div>        
+    </div> 
+  )  
   }
 export default Calendar;
