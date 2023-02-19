@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import Calendar from '../components/Calendar'
-import moment from 'moment'
-import queryString, { stringify } from 'query-string'
 import React from 'react'
 
 function Home( { weather } ) {
@@ -35,7 +33,7 @@ export async function getServerSideProps() {
   const baseURL = "https://api.open-meteo.com/v1/gfs?latitude=38.8403&longitude=97.6114&hourly="
   const res = await fetch(baseURL + params.join(","), {method: "GET"});
   const data = await res.json();
-  console.log(data);
+  console.log(data.time);
    
   return {
     props: {
