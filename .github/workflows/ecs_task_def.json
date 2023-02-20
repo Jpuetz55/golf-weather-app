@@ -1,0 +1,89 @@
+{
+    "family": "",
+    "taskRoleArn": "",
+    "executionRoleArn": "",
+    "networkMode": "bridge",
+    "containerDefinitions": [
+        {
+            "name": "",
+            "image": "",
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            },
+            "cpu": 0,
+            "memory": 0,
+            "memoryReservation": 0,
+            "links": [
+                ""
+            ],
+            "portMappings": [
+                {
+                    "containerPort": 0,
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "name": "",
+                    "appProtocol": "http",
+                    "containerPortRange": ""
+                }
+            ],
+            "essential": true,
+            "entryPoint": [
+                ""
+            ],
+            "command": [
+                ""
+            ],
+            "environment": [
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "environmentFiles": [
+                {
+                    "value": "",
+                    "type": "s3"
+                }
+            ],
+            "mountPoints": [
+                {
+                    "sourceVolume": "",
+                    "containerPath": "",
+                    "readOnly": true
+                }
+            ],
+            "volumesFrom": [
+                {
+                    "sourceContainer": "",
+                    "readOnly": true
+                }
+            ],
+            "linuxParameters": {
+                "capabilities": {
+    ],
+    "pidMode": "host",
+    "ipcMode": "host",
+    "proxyConfiguration": {
+        "type": "APPMESH",
+        "containerName": "",
+        "properties": [
+            {
+                "name": "",
+                "value": ""
+            }
+        ]
+    },
+    "inferenceAccelerators": [
+        {
+            "deviceName": "",
+            "deviceType": ""
+        }
+    ],
+    "ephemeralStorage": {
+        "sizeInGiB": 0
+    },
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "WINDOWS_SERVER_2019_FULL"
+    }
+}
