@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-golfweatherapp-dev-185518-authRole",
+      "UnauthRoleArn": "arn:aws:iam::570840534900:role/amplify-golfweatherapp-dev-185518-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::570840534900:role/amplify-golfweatherapp-dev-185518-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
+      "UnauthRoleName": "amplify-golfweatherapp-dev-185518-unauthRole",
+      "StackName": "amplify-golfweatherapp-dev-185518",
+      "StackId": "arn:aws:cloudformation:us-east-2:570840534900:stack/amplify-golfweatherapp-dev-185518/93a79c40-b24b-11ed-aebf-02f426e0e0fe",
+      "AmplifyAppId": "d3j4p2i3i8uqnt",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-golfweatherapp-dev-185518-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "golfweatherappade8adc0": {
+          "deploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
+          "s3Key": "amplify-builds/golfweatherappade8adc0-696e622f63612f647a2b-build.zip"
+        }
+      },
+      "auth": {
+        "golfweatherapp": {}
+      },
+      "api": {
+        "api144b772f": {}
+      }
+    }
+  }
+}
