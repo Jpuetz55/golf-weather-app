@@ -1,0 +1,114 @@
+{
+  "api": {
+    "api144b772f": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "Test"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "golfweatherapp": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE"
+          ],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "Test": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "golfweatherappAuthlayer": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    },
+    "golfweatherappade8adc0": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_Test_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "Test"
+        }
+      ]
+    },
+    "AMPLIFY_function_Test_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "Test"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappAuthlayer_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappAuthlayer"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappAuthlayer_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappAuthlayer"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappade8adc0_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappade8adc0"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappade8adc0_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappade8adc0"
+        }
+      ]
+    }
+  }
+}

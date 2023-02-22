@@ -1,20 +1,40 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import '../components/Navbar.css'
-import '../components/Calendar.css'
-import { SessionProvider, useSession } from "next-auth/react";
-
 import type { AppProps } from 'next/app'
 import React from 'react'
-import { Session } from 'inspector';
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
 
-function MyApp({ Component, pageProps: {session, ...pageProps} }) {
+function App({ signOut }) {
   return (
-    <SessionProvider session={session}>
-    <Navbar/>
-    <Component {...pageProps} />
-    </SessionProvider>
-  )
+    <View className="App">
+      <Card>
+        <Heading level={1}>We now have Auth!</Heading>
+      </Card>
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
+  );
 }
 
-export default MyApp
+export default withAuthenticator(App);
+
+// function MyApp({ Component, pageProps}) {
+//   return (
+//     <>
+//     <Navbar/>
+//     <Component {...pageProps} />
+//     </>
+    
+    
+//   )
+// }
+
+// export default MyApp
