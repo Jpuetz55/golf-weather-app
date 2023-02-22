@@ -3,12 +3,9 @@
   "paths": {
     "/items": {
       "name": "/items",
-      "lambdaFunction": "golfweatherappade8adc0",
+      "lambdaFunction": "Test",
       "permissions": {
-        "setting": "private",
-        "auth": [
-          "read"
-        ]
+        "setting": "open"
       }
     }
   }

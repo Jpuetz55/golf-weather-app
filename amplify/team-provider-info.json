@@ -17,6 +17,14 @@
         "golfweatherappade8adc0": {
           "deploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
           "s3Key": "amplify-builds/golfweatherappade8adc0-696e622f63612f647a2b-build.zip"
+        },
+        "Test": {
+          "deploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
+          "s3Key": "amplify-builds/Test-42563778597a324a6974-build.zip"
+        },
+        "golfweatherappAuthlayer": {
+          "deploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
+          "s3Key": "amplify-builds/golfweatherappAuthlayer-LambdaLayerVersion53a25eb7-build.zip"
         }
       },
       "auth": {

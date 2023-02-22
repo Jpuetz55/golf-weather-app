@@ -18,6 +18,16 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
+    "Test": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
+    "golfweatherappAuthlayer": {
+      "Arn": "string"
+    },
     "golfweatherappade8adc0": {
       "Arn": "string",
       "LambdaExecutionRole": "string",

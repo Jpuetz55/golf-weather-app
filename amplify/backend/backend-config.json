@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "golfweatherappade8adc0"
+          "resourceName": "Test"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -44,6 +44,17 @@
     }
   },
   "function": {
+    "Test": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "golfweatherappAuthlayer": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    },
     "golfweatherappade8adc0": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -51,6 +62,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_Test_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "Test"
+        }
+      ]
+    },
+    "AMPLIFY_function_Test_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "Test"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappAuthlayer_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappAuthlayer"
+        }
+      ]
+    },
+    "AMPLIFY_function_golfweatherappAuthlayer_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "golfweatherappAuthlayer"
+        }
+      ]
+    },
     "AMPLIFY_function_golfweatherappade8adc0_deploymentBucketName": {
       "usedBy": [
         {
