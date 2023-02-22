@@ -11,10 +11,10 @@ export default function Navbar() {
       </h1>
       <ul className='main-nav' />
           <li>
-          <Link href='/api/auth/signin'></Link>
+          <Link href=''></Link>
           </li>   
           <li>
-          <Link href='/api/auth/signout'></Link>
+          <Link href=''></Link>
         </li>  
     </nav>
   )
