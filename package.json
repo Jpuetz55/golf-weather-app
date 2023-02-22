@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "amplify": "^0.0.11",
     "next": "^12.2.4",
     "next-auth": "^4.10.3",
     "node": "16.13.0",
