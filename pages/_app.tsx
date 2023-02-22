@@ -1,10 +1,8 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import '../components/Navbar.css'
-import '../components/Calendar.css'
 import type { AppProps } from 'next/app'
 import React from 'react'
-import logo from "./logo.svg";
 import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
@@ -19,7 +17,6 @@ function App({ signOut }) {
   return (
     <View className="App">
       <Card>
-        <Image src={logo} className="App-logo" alt="logo" />
         <Heading level={1}>We now have Auth!</Heading>
       </Card>
       <Button onClick={signOut}>Sign Out</Button>
