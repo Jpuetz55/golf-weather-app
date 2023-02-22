@@ -11,10 +11,6 @@ export default function Navbar() {
       </h1>
       <ul className='main-nav' />
           <li>
-          <Link href=''></Link>
-          </li>   
-          <li>
-          <Link href=''></Link>
         </li>  
     </nav>
   )
