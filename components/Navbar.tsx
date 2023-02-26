@@ -9,9 +9,11 @@ export default function Navbar() {
       <h1 className='logo'>
         <a href='#'>Golf Weather</a>
       </h1>
-      <ul className='main-nav' />
-          <li>
+      <li>
+            <Link href='/authenticate'>Sign in</Link>            
         </li>  
+      <ul className='main-nav' />
+          
     </nav>
   )
 }
