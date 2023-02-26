@@ -25,9 +25,7 @@
           "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [
-            "REQUIRES_LOWERCASE"
-          ],
+          "passwordPolicyCharacters": [],
           "passwordPolicyMinLength": 8
         },
         "signupAttributes": [
