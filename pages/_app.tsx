@@ -13,18 +13,19 @@ import {
   Card,
 } from "@aws-amplify/ui-react";
 
-function App({ signOut }) {
+
+function App({ Component, pageProps }: AppProps) {
   return (
-    <View className="App">
-      <Card>
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
-  );
+    <>
+    <Navbar/>
+    <Component {...pageProps} />
+    </>
+  )
+ 
+  
 }
 
-export default withAuthenticator(App);
+export default App;
 
 // function MyApp({ Component, pageProps}) {
 //   return (

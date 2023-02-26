@@ -9,8 +9,7 @@
       "UnauthRoleName": "amplify-golfweatherapp-dev-185518-unauthRole",
       "StackName": "amplify-golfweatherapp-dev-185518",
       "StackId": "arn:aws:cloudformation:us-east-2:570840534900:stack/amplify-golfweatherapp-dev-185518/93a79c40-b24b-11ed-aebf-02f426e0e0fe",
-      "AmplifyAppId": "d3j4p2i3i8uqnt",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-golfweatherapp-dev-185518-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "AmplifyAppId": "d3j4p2i3i8uqnt"
     },
     "categories": {
       "function": {
@@ -24,7 +23,7 @@
         },
         "golfweatherappAuthlayer": {
           "deploymentBucketName": "amplify-golfweatherapp-dev-185518-deployment",
-          "s3Key": "amplify-builds/golfweatherappAuthlayer-LambdaLayerVersion53a25eb7-build.zip"
+          "s3Key": "amplify-builds/golfweatherappAuthlayer-LambdaLayerVersion924f4be5-build.zip"
         }
       },
       "auth": {
